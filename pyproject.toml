@@ -1,0 +1,23 @@
+[project]
+name = "2026-m2-leaddev-pythondata-cv"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Nicolas Metivier",email = "nicolas.a.metivier@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14,<4.0"
+dependencies = [
+    "opencv-python (>=5.0.0.93,<6.0.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "2026_m2_leaddev_pythondata_cv", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+start = "2026_m2_leaddev_pythondata_cv.main:main"
